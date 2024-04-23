@@ -1,40 +1,39 @@
-/**
- * <div id='parent'>
-    <div id='child'>
-        <h1>
-            i'am h1 tag
-        </h1>
-        <h2>
-        i'am h2 tag </h2>
-    </div>
-    <div id='child2'>
-        <h1>
-            i'am h1 tag
-        </h1>
-        <h2>
-        i'am h2 tag </h2>
-    </div>
-</div>
- * 
- */
+import React from "react";
+import { render } from "react-dom";
+import ReactDOM from "react-dom/client";
 
-const parent = React.createElement("div", { id: "paret" }, [
-  React.createElement("div", { id: "child" }, [
-    React.createElement("h1", {}, "I,am h1 tag"),
-    React.createElement("h2", {}, "I,am h2 tag"),
-  ]),
-  React.createElement("div", { id: "child2" }, [
-    React.createElement("h1", {}, "I,am h1 tag"),
-    React.createElement("h2", {}, "I,am h2 tag"),
-  ]),
-]);
+// React.createElement =>reactElement - JS Object => html Element (render)
+const heading = React.createElement(
+  "h1",
+  { id: "heading" },
+  "Welcome to the app"
+);
 
-// const heading = React.createElement(
-//   "h1",
-//   { id: "heading" },
-//   "Hello World From React"
-// );
-// ===== heading is object(return a react element)====
+//JSX => React.createElement =>reactElement - JS Object => html Element (render)
 
+const Title = () => {
+  return (
+    <h1 className="head" tabIndex={1}>
+      heading using jsx
+    </h1>
+  );
+};
+
+const Headingcomponet = () => (
+  <div>
+    {Title()}
+    <Title />
+    <Title></Title>
+    <h1 className="heading">heading componet using function component</h1>
+  </div>
+);
+
+const elemrnt = (
+  <div>
+    <h1>hello</h1>
+    {Headingcomponet()}
+  </div>
+);
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(parent);
+
+root.render(elemrnt);
