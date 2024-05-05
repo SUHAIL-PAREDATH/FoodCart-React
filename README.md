@@ -18,3 +18,22 @@
 - HTTPs
 - Tree Shaking - remove unuse code
 -  
+
+
+# Food App
+
+/**
+ * Header
+ *  - Logo
+ *  - Nav item
+ *
+ * Body
+ *  - Search Bar
+ *  - Restaurant Container
+ *     - Resaurant Card
+ * Footer
+ *  - Copyright
+ *  - links
+ *  - Addresss
+ *  - Contact
+ */
