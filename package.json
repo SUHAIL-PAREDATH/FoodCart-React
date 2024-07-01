@@ -34,7 +34,8 @@
     "rreact-dom": "^1.0.0",
     "s": "^1.0.0",
     "sr": "^1.0.4",
-    "src": "^1.1.2"
+    "src": "^1.1.2",
+    "u": "^0.1.0"
   },
   "browserslist": [
     "last 2 versions"
