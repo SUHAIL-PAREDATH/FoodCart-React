@@ -17,23 +17,11 @@ class About extends Component {
     return (
       <div>
         <h1>About Page </h1>
-        {/* <User name={"suhail (function)"} location={"Kerala"}/>  */}
         <UserClass name={"First"} location={"Kerala"} />
-        <UserClass name={"Second"} location={"Kerala"} />
-        <UserClass name={"Third"} location={"Kerala"} />
       </div>
     );
   }
 }
 
-// function About() {
-//   return ( 
-//     <div>
-//         <h1>About Page </h1>
-//         {/* <User name={"suhail (function)"} location={"Kerala"}/>  */}
-//         <UserClass name={"suhail (class)"} location={"Kerala"}/>
-//     </div>
-//   )
-// }
 
 export default About;
