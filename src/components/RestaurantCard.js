@@ -1,7 +1,7 @@
 import React from "react";
 import { CDN_URL } from "../utils/constance";
 
-const ResaurantCard = (props) => {
+const RestaurantCard = (props) => {
   const { resData } = props;
   const { name, cuisines, 
     sla, avgRating, cloudinaryImageId } =
@@ -10,7 +10,7 @@ const ResaurantCard = (props) => {
     
   return (
     <div className="res-card m-4 p-4 w-[250px] bg-white rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
-  <div className="relative w-full h-[160px] overflow-hidden rounded-lg">
+  <div className=" w-full h-[160px] overflow-hidden rounded-lg">
     <img
       className="inset-0 w-full h-36 object-cover"
       src={CDN_URL + cloudinaryImageId}
@@ -43,4 +43,15 @@ const ResaurantCard = (props) => {
   );
 };
 
-export default ResaurantCard;
+export const withPromotedLabel = (RestaurantMenu) => {
+  return (props) => {
+    return (
+      <div className="relative">
+        <label className="absolute  bg-gray-800 font-semibold text-white p-1 rounded-md">Promoted</label>
+        <RestaurantMenu {...props} />
+      </div>
+    );
+  };
+};
+
+export default RestaurantCard;
