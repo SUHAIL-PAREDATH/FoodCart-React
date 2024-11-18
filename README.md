@@ -37,3 +37,16 @@
  *  - Addresss
  *  - Contact
  */
+
+ # 2 Types of routing
+ - Client Side Routing
+ - Server Side Routing
+
+
+ # Redux ToolKit
+ - install @reduxjs/toolkit and react-redux
+ - Build our app
+ - connect our store to the app
+ - slice(cartSlice)
+ - dispatch (action)
+ - Selector
