@@ -50,3 +50,17 @@
  - slice(cartSlice)
  - dispatch (action)
  - Selector
+
+ # Type of tesing (devoloper)
+
+ - unit testing 
+ - Integration testing
+ - End to End testing 
+
+ # Setting up testing in our app
+
+ - Installing React Testing Library
+ - Installed jest
+ - Installed babel dependecies
+ - Configure  Babel
+ - Configure Parcel cofing file to disable defult babel transpilation  
